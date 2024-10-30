@@ -1,0 +1,26 @@
+.gbmp-2-cols {
+	margin: -1em;
+}
+
+.gbmp-2-cols > div {
+	width: 50%;
+	float: left;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+.gbmp-2-cols > .s1-3 {
+	width: 33.33%;
+}
+
+.gbmp-2-cols > .s2-3 {
+	width: 66.66%;
+}
+
+.gbmp-text {
+	padding:  8px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background: #fff;
+	color: #888;
+}

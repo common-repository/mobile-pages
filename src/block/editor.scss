@@ -1,0 +1,65 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+[data-gbmp-type] {
+	border: 10px solid transparent;
+
+	.ml-auto {
+		margin-left: auto;
+	}
+
+	.ml1e {
+		margin-left: 16px;
+	}
+
+	.wp-block {
+		max-width: none;
+	}
+}
+
+[data-gbmp-type="mobile"] {
+	display: flex;
+	align-items: stretch;
+
+	&:after, &:before {
+		content: '';
+		display: block;
+		background: transparent;
+		flex: 1;
+		max-width: none;
+	}
+
+	> * {
+		width: 100%;
+		max-width: 500px;
+	}
+}
+
+[data-gbmp-type] ul.gbmp-tabs {
+	margin: 0;
+
+	li {
+		display: block;
+	}
+}
+
+[data-gbmp-active] {
+	border: 1px solid #ddd;
+
+	[data-type*='gbmp'] {
+		margin: 0;
+		border-top-width: 50px;
+
+		[data-gbmp-type] {
+			margin: 0;
+		}
+	}
+}
+
+[data-gbmp-active="mobile"] [data-type="gbmp/desktop"], [data-gbmp-active="desktop"] [data-type="gbmp/mobile"] {
+	display: none;
+}
